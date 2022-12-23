@@ -9,4 +9,3 @@ if(process.env.SEED){
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
-// Path: server/index.js

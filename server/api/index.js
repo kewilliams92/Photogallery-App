@@ -1,8 +1,10 @@
 const router = require('express').Router();
 
 // Mount our apiRouter on the /api path
-router.use('/sample', require('./sample'));
-router.use('/sample2', require('./sample2'));
+router.use('/photographer', require('./photographer'));
+router.use('/photo', require('./photo'));
+router.use('/about', require("./about"));
+router.use('/auth', require('./auth'));
 
 // No routes matched? 404.
 router.use(function (req, res, next) {

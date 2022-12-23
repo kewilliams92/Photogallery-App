@@ -1,6 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import sampleSlice from "../features/sampleSlice/sampleSlice";
+import photosSlice from "../features/photosSlice/photosSlice";
+
 
 export const store = configureStore({
-    reducer: {}
+    reducer: {
+        photos: photosSlice,
+    }
 });
